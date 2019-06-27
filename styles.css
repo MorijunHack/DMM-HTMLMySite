@@ -4,11 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
+	color: #fafafa;
 }
 
 /*clearfix*/
@@ -19,6 +15,46 @@ a {
 	clear: both;
 }
 
+/*portfolio〜contactにおける汎用的な仕様*/
+
+.wrapper {
+	width: 100%;
+	padding: 90px 0;
+}
+
+.wrapper:nth-child(odd) {
+	background: #eceff1;
+}
+
+.wrapper:nth-child(even) {
+	background: #fff;
+}
+
+.title {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.title h1 {
+	font-size: 32px;
+	color: #000;;
+}
+
+.title-underline {
+	width: 70px;
+	height: 3px;
+	background: #ec715f;
+	margin: 8px auto 30px;
+}
+
+.title p {
+	font-size: 16px;
+	color: #000;
+}
+
+
+/*header*/
+
 header {
 	width: 100%;
 	height: 70px;
@@ -28,7 +64,6 @@ header {
 .header-contents {
 	width: 1024px;
 	margin: 0 auto;
-	color: #fff;
 }
 
 .header-logo {
@@ -46,11 +81,239 @@ nav {
 	text-align: center;
 }
 
+.list-item a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .list-item {
 	float: left;
-	color: #fafafa;
 	margin: 0 30px;
 	font-size: 16px;
 	line-height: 70px;
 }
 
+
+/*main-visual*/
+
+.main-visual {
+	width: 100%;
+	height: 650px;
+	background: url(img/mv.png);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.main-visual h1 {
+	display: inline-block;
+	margin-top: 200px;
+	font-size: 64px;
+}
+
+.main-visual p {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+/*portfolio*/
+
+.pf-container {
+	width: 920px;
+	margin: 0 auto;
+}
+
+.boxes {
+	width: 100%;
+	height: 510px;
+}
+
+.box {
+	float: left;
+	width: 300px;
+	height: 250px;
+}
+
+.box:nth-child(3n+2) {
+	margin: 0 10px;
+}
+
+.box:nth-child(n+4) {
+	margin-top: 10px;
+}
+
+.box1 {
+	background: url(img/sketch.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.box2 {
+	background: url(img/websuku.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.box3 {
+	background: url(img/write.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.box4 {
+	background: url(img/webcamp.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.box5 {
+	background: url(img/talk.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.box6 {
+	background: url(img/webcamp-mother.png);
+	background-size: cover;
+	background-position: center;
+}
+
+/*feature*/
+
+.ft-container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.ft-content {
+	float: left;
+	width: 320px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.ft-content:last-child {
+	margin-right: 0;
+}
+
+.ft-icon {
+	color: #000;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.ft-content h3 {
+	font-size: 20px;
+	line-height: 20px;
+	margin: 10px 0;
+	color: #000;
+}
+
+.ft-content p {
+	text-align: left;
+	color: #000;
+	font-size: 16px;
+}
+
+/*Profile*/
+
+.prof-container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.prof-icon {
+	float:left;
+	width: 512px;
+	text-align: center;
+}
+
+.prof-icon img {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+
+.biography {
+	float: left;
+	width: 512px;
+}
+
+.prof-content:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+.prof-content h2 {
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: #000;
+}
+
+.prof-content p {
+	font-size: 16px;
+	color: #000;
+}
+
+/*Contact*/
+
+.contact-container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.contact-half {
+	float: left;
+	width: 400px;
+}
+
+.left-content {
+	width: 130px;
+	margin: 0 auto;
+}
+
+.left-content h3 {
+	font-size: 20px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.contact-tel {
+	margin-top: 20px;
+}
+
+.left-content a {
+	color: #000;
+}
+
+.right-content {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.right-content h3 {
+	font-size: 20px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.sns-icon {
+	color: #000;
+	font-size: 50px;
+	margin-right: 20px;
+}
+
+.sns-icon:last-child {
+	margin-right: 0;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	background: #ec715f;
+	text-align: center;
+}
+
+footer p {
+	font-size: 16px;
+	line-height: 60px;
+}
